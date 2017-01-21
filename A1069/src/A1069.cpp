@@ -1,0 +1,47 @@
+//============================================================================
+// Name        : A1069.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <cstdio>
+#include <algorithm>
+using namespace std;
+
+void vers(int n,int &b,int &s){
+	int a[4];
+	for(int i = 0 ; i < 4 ; i++){
+		a[i]=n%10;
+		n = n /10;
+	}
+	sort(a,a+4);
+	int ans = 0;
+	for(int i = 3 ; i >=0 ;i--){
+		ans = ans*10+a[i];
+	}
+	b = ans;
+	ans=0;
+	for(int i = 0 ; i < 4 ; i++){
+		ans = ans*10+a[i];
+	}
+	s = ans;
+}
+int main() {
+	int n;
+	scanf("%d",&n);
+	int b,s;
+	while(1){
+		vers(n,b,s);
+		printf("%04d - %04d = %04d\n",b,s,b-s);
+		n = b-s;
+		if(n == 0 )
+			break;
+		if(n==6174)//key
+			break;
+	}
+
+	return 0;
+}
