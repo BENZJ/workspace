@@ -1,0 +1,29 @@
+//============================================================================
+// Name        : A1083.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <cstdio>
+#include <algorithm>
+#include <cstring>
+using namespace std;
+
+struct Student{
+	char name[20] ;
+	char id[20];
+	int score;
+};
+bool cmp(Student a, Student b){
+	if(a.score!=b.score)
+		return a.score>b.score;
+	else
+		return strcmp(a.id,b.id)<0;
+}
+int main() {
+
+	return 0;
+}

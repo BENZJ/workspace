@@ -1,0 +1,24 @@
+//============================================================================
+// Name        : A1048.cpp // Author      :
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <cstdio>
+#include <algorithm>
+using namespace std;
+const int maxn = 100010;
+int money[505]={0};
+int data[maxn];
+int main() {
+	int n,m;
+	scanf("%n%m",&n,&m);
+	for(int i = 0 ; i <n ; i++){
+		scanf("%d",&data[i]);
+		money[data[i]]++;
+	}
+	sort(data,data+n);
+	return 0;
+}

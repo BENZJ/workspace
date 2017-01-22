@@ -1,0 +1,42 @@
+//============================================================================
+// Name        : A1037.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <cstdio>
+#include <algorithm>
+using namespace std;
+int a[100010];
+int b[100010];
+long long ans;
+int main() {
+	int n , m ;
+	scanf("%d",&n);
+	for(int i = 0 ; i < n ; i++){
+		scanf("%d",&a[i]);
+	}
+	sort(a,a+n);
+	scanf("%d",&m);
+	for(int i = 0 ; i < m ; i++){
+		scanf("%d",&b[i]);
+	}
+	sort(b,b+m);
+	ans = 0 ;
+	int i,j;
+	for( i = 0, j = 0; a[i]*b[j]>0&& i < n&& j < n; i++,j++){
+		ans+=a[i]*b[j];
+	}
+	if((a[0]>0&&b[0]>0)||a[i]*b[j]<=0&& i<n&& j <m){
+		if(a[0]>0&&b[0]>0)
+			ans=0;
+		for(i = n-1, j = m-1 ; a[i]*b[j]>0&&i>=0&&b>=0;i--,j--){
+			ans+=a[i]*b[j];
+		}
+	}
+	printf("%lld\n",ans);
+	return 0;
+}

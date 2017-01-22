@@ -1,0 +1,18 @@
+//============================================================================
+// Name        : A1048.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <cstdio>
+using namespace std;
+int money[505]={0};
+int main() {
+	int n,m;
+	scanf("%n%m",&n,&m);
+
+	return 0;
+}

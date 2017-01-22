@@ -1,0 +1,40 @@
+//============================================================================
+// Name        : A1028.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <cstdio>
+#include <algorithm>
+#include <cstring>
+using namespace std;
+const int maxn=100010;
+struct Student {
+	int id;
+	char name[10];
+	int score;
+}stu[maxn];
+bool cmp1(Student a, Student b){
+	return a.id<b.id;
+}
+bool cmp2(Student a, Student b){
+	if(strcmp(a.name,b.name)!=0)
+		return strcmp(a.name,b.name)<0;
+	else
+		return a.id<b.id;
+}
+bool cmp3(Student a, Student b){
+	if(a.score!=b.score)
+		return a.score<b.score;
+	else
+		return a.id<b.id;
+}
+int main() {
+	int n,type;
+	scanf("%d %d",&n,&type);
+
+	return 0;
+}

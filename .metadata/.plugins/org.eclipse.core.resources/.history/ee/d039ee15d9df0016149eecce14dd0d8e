@@ -1,0 +1,18 @@
+//============================================================================
+// Name        : A1073.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <cstdio>
+using namespace std;
+
+int main() {
+	double n;
+	scanf("%lf",&n);
+	printf("%g\n",n);
+	return 0;
+}

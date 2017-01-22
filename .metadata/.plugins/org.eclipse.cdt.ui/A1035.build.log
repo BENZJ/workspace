@@ -1,0 +1,7 @@
+17:57:04 **** Incremental Build of configuration Debug for project A1035 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\A1035.o" "..\\src\\A1035.cpp" 
+g++ -o A1035.exe "src\\A1035.o" 
+
+17:57:05 Build Finished (took 330ms)
+

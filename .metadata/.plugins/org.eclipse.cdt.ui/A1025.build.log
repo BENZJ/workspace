@@ -1,0 +1,7 @@
+15:15:43 **** Incremental Build of configuration Debug for project A1025 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\A1025.o" "..\\src\\A1025.cpp" 
+g++ -o A1025.exe "src\\A1025.o" 
+
+15:15:44 Build Finished (took 573ms)
+

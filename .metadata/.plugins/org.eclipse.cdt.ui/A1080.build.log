@@ -1,0 +1,7 @@
+21:22:28 **** Incremental Build of configuration Debug for project A1080 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\A1080.o" "..\\src\\A1080.cpp" 
+g++ -o A1080.exe "src\\A1080.o" 
+
+21:22:28 Build Finished (took 374ms)
+

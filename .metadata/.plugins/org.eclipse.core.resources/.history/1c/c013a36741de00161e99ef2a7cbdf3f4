@@ -1,0 +1,19 @@
+//============================================================================
+// Name        : A1050.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <cstring>
+#include <cstdio>
+using namespace std;
+const int maxn=10009;
+char a[maxn],b[maxn];
+int main() {
+	gets(a);
+	gets(b);
+	return 0;
+}

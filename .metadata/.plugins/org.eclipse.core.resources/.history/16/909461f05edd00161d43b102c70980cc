@@ -1,0 +1,17 @@
+//============================================================================
+// Name        : my.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <cstdio>
+using namespace std;
+
+int main() {
+	printf("hello world");
+	return 0;
+
+}

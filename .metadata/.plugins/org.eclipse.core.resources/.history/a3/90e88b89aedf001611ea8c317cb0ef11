@@ -1,0 +1,40 @@
+//============================================================================
+// Name        : A1084.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <cstdio>
+#include <cstring>
+using namespace std;
+char str1[88],str2[88];
+int Hash[300]={0};
+int main() {
+//	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	scanf("%s%s",str1,str2);
+	int strl1 = strlen(str1);
+	int strl2 = strlen(str2);
+	int i,j;
+	for(i = 0 , j = 0 ; i<strl1 && j<strl2;){
+		if(str1[i]==str2[j]){
+			i++;
+			j++;
+		}else {
+			if(Hash[str1[i]]==0){
+				printf("%c",str1[i]);
+			}
+			Hash[str1[i]]=1;
+			i++;
+		}
+	}
+	for(;i<strl1;i++){
+		if(Hash[str1[i]]==0){
+			printf("%c",str1[i]);
+		}
+		Hash[str1[i]]=1;
+	}
+	return 0;
+}

@@ -1,0 +1,43 @@
+//============================================================================
+// Name        : A1025.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <string>
+#include <cstdio>
+#include <algorithm>
+using namespace std;
+struct Student{
+	string id;
+	int mark;
+	int group;
+}stu[30011];
+bool cmp(Student a, Student b){
+	return a.mark>b.mark;
+}
+int main() {
+//	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	int count = 0;
+	int n;
+	cin>>n;
+	for(int i = 0 ; i < n; i++){
+		int m;
+		cin>>m;
+		for(int j = 0 ; j < m ; j++){
+			cin>>stu[count].id>>stu[count].mark;
+			stu[count].group = i;
+			count++;
+		}
+	}
+	int gouprank[101]={0};
+	sort(stu,stu+count,cmp);
+	for(int i = 0 ; i<count; i ++){
+		cout << stu[i].id<<" "<<i+1<<stu[i].group<<++gouprank[stu[i].group]<<endl;
+
+	}
+	return 0;
+}

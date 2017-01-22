@@ -1,0 +1,11 @@
+15:24:01 **** Incremental Build of configuration Debug for project A1061 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\A1061.o" "..\\src\\A1061.cpp" 
+..\src\A1061.cpp: In function 'int main()':
+..\src\A1061.cpp:34:13: warning: unused variable 'j' [-Wunused-variable]
+     int i , j;
+             ^
+g++ -o A1061.exe "src\\A1061.o" 
+
+15:24:02 Build Finished (took 390ms)
+
